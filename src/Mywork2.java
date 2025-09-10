@@ -19,11 +19,9 @@ public class Mywork2 extends JFrame implements ActionListener {
 
 
         b1=new JButton("START");
-        b1.addActionListener(e->{ti.start();});
+        b1.addActionListener(e->ti.start());
         b2=new JButton("STOP");
-        b2.addActionListener(e->{
-            ti.stop();
-        });
+        b2.addActionListener(e->ti.stop());
         b3=new JButton("RESTART");
         b3.addActionListener(e->{
             jp.setValue(0);
