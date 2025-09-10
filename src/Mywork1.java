@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class Mywork1 extends JPanel implements ActionListener {
 
-    private int height = 0;  // filling height
+    private int height = 0;
     private JProgressBar progressBar;
 
     public Mywork1() {
@@ -23,7 +23,7 @@ public class Mywork1 extends JPanel implements ActionListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-        // simple timer (updates every 100ms)
+
         Timer ti=new Timer(100, this);
         ti.start();
     }
@@ -32,11 +32,11 @@ public class Mywork1 extends JPanel implements ActionListener {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        // outer box (tank)
+
         g.setColor(Color.LIGHT_GRAY);
         g.drawRect(100, 50, 200, 300);
 
-        // fill inside
+
         g.setColor(Color.BLUE);
         g.fillRect(100,350-height,200,height);
     }
