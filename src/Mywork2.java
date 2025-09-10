@@ -12,6 +12,7 @@ public class Mywork2 extends JFrame implements ActionListener {
         jp.setBackground(Color.YELLOW);
         jp.setForeground(Color.PINK);
         jp.setStringPainted(true);
+        jp.setPreferredSize(new Dimension(300,30));
 
 
         Timer ti=new Timer(50,this);
@@ -28,12 +29,15 @@ public class Mywork2 extends JFrame implements ActionListener {
             jp.setValue(0);
             height=0;
             repaint();
+//            b1.setVisible(true);
+//            b2.setVisible(true);
         });
 
 
 
         JPanel jpa=new JPanel();
-        jpa.setBorder(BorderFactory.createTitledBorder("PROGRESS BAR"));
+        jpa.setBorder(BorderFactory.createTitledBorder("PROGRESS STATUS"));
+
         jpa.add(jp);
         jpa.add(b1);
         jpa.add(b2);
@@ -46,7 +50,7 @@ public class Mywork2 extends JFrame implements ActionListener {
         add(jpa);
         setTitle("PROGRESS BAR");
         setVisible(true);
-        setSize(1000,1000);
+        setSize(1200,800);
     }
     public static void main(String[] args) {
         new Mywork2();
@@ -70,5 +74,9 @@ public class Mywork2 extends JFrame implements ActionListener {
             jp.setValue(height/3);
             repaint();
         }
+//        else{
+//            b1.setVisible(false);
+//            b2.setVisible(false);
+//        }
     }
 }
