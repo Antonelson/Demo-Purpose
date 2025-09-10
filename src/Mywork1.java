@@ -25,6 +25,7 @@ public class Mywork1 extends JPanel implements ActionListener {
 
         // simple timer (updates every 100ms)
         Timer ti=new Timer(100, this);
+        ti.start();
     }
 
     @Override
@@ -37,19 +38,20 @@ public class Mywork1 extends JPanel implements ActionListener {
 
         // fill inside
         g.setColor(Color.BLUE);
-        g.fillRect(100, 350 - height, 200, height);
+        g.fillRect(100,350-height,200,height);
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Mywork1::new);
+       // SwingUtilities.invokeLater(Mywork1::new);
+        new Mywork1();
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
             if (height < 300) {
-                height += 3;                        // increase fill
-                progressBar.setValue(height / 3);   // map to 0–100
+                height += 3;
+                progressBar.setValue(height / 3);
                 repaint();
             }
     }
