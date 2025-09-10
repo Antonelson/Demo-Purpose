@@ -37,7 +37,7 @@ public class Mywork1 extends JPanel implements ActionListener {
         g.drawRect(100, 50, 200, 300);
 
 
-        g.setColor(Color.BLUE);
+        g.setColor(Color.BLACK);
         g.fillRect(100,350-height,200,height);
     }
 
