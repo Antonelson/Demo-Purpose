@@ -82,7 +82,6 @@ public class Main {
 
         blueButton.addActionListener(e -> progressBar.setForeground(Color.BLUE));
 
-        //dd
     }
 }
 
