@@ -35,14 +35,10 @@ public class Mywork2 extends JFrame implements ActionListener {
 
         JPanel jpa=new JPanel();
         jpa.setBorder(BorderFactory.createTitledBorder("PROGRESS STATUS"));
-
         jpa.add(jp);
         jpa.add(b1);
         jpa.add(b2);
         jpa.add(b3);
-
-
-
         setLayout(new FlowLayout());
 
         add(jpa);
