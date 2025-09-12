@@ -5,15 +5,14 @@ public class Main {
     private static boolean running = false;
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Progress Bar Start & Stop with Color Selector");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        JFrame frame = new JFrame("PROGRESS Bar Start & Stop with Color Selector");
+//      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 230);
         frame.setLayout(new FlowLayout());
 
         JProgressBar progressBar = new JProgressBar(0, 100);
         progressBar.setPreferredSize(new Dimension(400, 30));
-        progressBar.setStringPainted(true);
+      //  progressBar.setStringPainted(true);
         progressBar.setForeground(Color.PINK);
         progressBar.setBackground(Color.LIGHT_GRAY);
 
@@ -28,7 +27,6 @@ public class Main {
 
         ButtonGroup colorGroup = new ButtonGroup();
         colorGroup.add(pinkButton);
-
         colorGroup.add(blueButton);
 
         // Panel to hold radio buttons
@@ -44,7 +42,7 @@ public class Main {
         frame.add(colorPanel);
         frame.setVisible(true);
 
-        Timer timer = new Timer(50, null);
+        Timer timer = new Timer(1000, null);
 
         timer.addActionListener(e -> {
             int value = progressBar.getValue();
