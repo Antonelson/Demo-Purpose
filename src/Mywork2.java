@@ -66,15 +66,10 @@ public class Mywork2 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(height<300)
-        {
-            height+=3;
-            jp.setValue(height/3);
+        if (height < 300) {
+            height += 3;
+            jp.setValue(height / 3);
             repaint();
         }
-//        else{
-//            b1.setVisible(false);
-//            b2.setVisible(false);
-//        }
     }
 }
