@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Progress Bar Start & Stop with Color Selector");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         frame.setSize(420, 230);
         frame.setLayout(new FlowLayout());
 
