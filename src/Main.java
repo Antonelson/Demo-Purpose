@@ -5,7 +5,7 @@ public class Main {
     private static boolean running = false;
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Progress Bar Start & Stop with Color Selector");
+        JFrame frame = new JFrame("progressuuu Bar Start & Stop with Color Selector");
 //      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 230);
         frame.setLayout(new FlowLayout());
