@@ -81,6 +81,8 @@ public class Main {
         pinkButton.addActionListener(e -> progressBar.setForeground(Color.PINK));
 
         blueButton.addActionListener(e -> progressBar.setForeground(Color.BLUE));
+
+        //dd
     }
 }
 
