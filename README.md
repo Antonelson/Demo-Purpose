@@ -1,2 +1,2 @@
-Just Learnning How Git and Github works 
+Just Learning How Git and GitHub works 
 nothing important here.
